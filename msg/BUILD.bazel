@@ -1,4 +1,3 @@
-
 # Copyright 2025 Open Source Robotics Foundation, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,24 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Imports
-
-load("@ros//:defs.bzl", "ros_interface", "ros_package")
+load("@ros//:defs.bzl", "ros_interface")
 
 package(default_visibility = ["//visibility:public"])
 
-# Interfaces
-
 ros_interface(
-    name = "msg__UUID",
-    src = "msg/UUID.msg",
-)
-
-# Package
-
-ros_package(
-    name = "unique_identifier_msgs",
-    interfaces = [
-        ":msg__UUID",
-    ],
+    name = "UUID",
+    src = "UUID.msg",
 )
