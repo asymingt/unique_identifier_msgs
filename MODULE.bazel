@@ -22,4 +22,4 @@ module(
 
 # Dependencies
 
-bazel_dep(name = "ros", version = "0.0.1")
+bazel_dep(name = "rosidl_cmake", version = "5.0.0")
